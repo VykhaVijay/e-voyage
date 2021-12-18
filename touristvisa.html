@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+
+            background-color: rgba(167, 92, 238, 0.205);
+            background-position: centre;
+            background-size: cover;
+            font-family: sans-serif;
+            margin-top: 40px;
+        }
+
+        .touristvisafrom {
+            width: 800px;
+            background-color: rgba(94, 92, 92, 0.6);
+            margin: auto;
+            color: #FFFFFF;
+            padding: 10px 0px 10px 0px;
+            text-align: center;
+            border-radius: 15px 15px 0px 0px;
+        }
+
+        .main {
+            background-color: rgba(219, 214, 214, 0.5);
+            width: 800px;
+            margin: auto;
+        }
+
+        form {
+            padding: 10px;
+        }
+
+        #name {
+            width: 100%;
+            height: 100px;
+        }
+
+        .name {
+            margin-left: 25px;
+            margin-top: 30px;
+            width: 125px;
+            color: whi/te;
+            color: #000;
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        .firstname {
+            position: relative;
+            left: 200px;
+            top: -37px;
+            line-height: 40px;
+            border-radius: 6px;
+            padding: 0 22px;
+            font-size: 16px;
+        }
+
+        .lastname {
+            position: relative;
+            left: 417px;
+            top: -80px;
+            line-height: 40px;
+            border-radius: 6px;
+            padding: 0 22px;
+            font-size: 16px;
+            color: #555;
+
+        }
+
+        .firstlabel {
+            position: relative;
+            color: #1d1c1c;
+            text-transform: capitalize;
+            font-size: 14px;
+            left: 200px;
+            top: -48px;
+        }
+
+        .lastlabel {
+            position: relative;
+            color: #1d1c1c;
+            text-transform: capitalize;
+            font-size: 14px;
+            left: 490px;
+            top: -78px;
+        }
+
+        .passportno {
+            position: relative;
+            left: 200px;
+            top: -37px;
+            line-height: 40px;
+            width: 300px;
+            border-radius: 6px;
+            padding: 0 22px;
+            font-size: 16px;
+            color: #555
+        }
+
+        .numberlabel {
+            position: relative;
+            color: #1d1c1c;
+            text-transform: capitalize;
+            font-size: 14px;
+            left: 200px;
+            top: -30px;
+        }
+
+        .expirationdate {
+            position: relative;
+            left: 200px;
+            top: -37px;
+            line-height: 40px;
+            width: 300px;
+            border-radius: 6px;
+            padding: 0 22px;
+            font-size: 16px;
+            color: #555
+        }
+
+        .expirylabel {
+            position: relative;
+            color: #1d1c1c;
+            text-transform: capitalize;
+            font-size: 14px;
+            left: 200px;
+            top: -30px;
+        }
+
+        .agencyname{
+            position: relative;
+            left: 200px;
+            top: -37px;
+            line-height: 40px;
+            width: 300px;
+            border-radius: 6px;
+            padding: 0 22px;
+            font-size: 16px;
+            color: #555
+        }
+
+        .agencynamelabel{
+            position: relative;
+            color: #1d1c1c;
+            text-transform: capitalize;
+            font-size: 14px;
+            left: 200px;
+            top: -30px;
+        }
+
+        .country_name{
+            position: relative;
+            left: 200px;
+            top: -37px;
+            line-height: 40px;
+            width: 300px;
+            border-radius: 6px;
+            padding: 0 22px;
+            font-size: 16px;
+            color: #555
+        }
+
+        .countrynamelabel{
+            position: relative;
+            color: #1d1c1c;
+            text-transform: capitalize;
+            font-size: 14px;
+            left: 200px;
+            top: -30px;
+        }
+
+        .address{
+            position: relative;
+            left: 200px;
+            top: -37px;
+            line-height: 40px;
+            width: 300px;
+            border-radius: 6px;
+            padding: 0 22px;
+            font-size: 16px;
+            color: #555
+        }
+
+        .addresslabel{
+            position: relative;
+            color: #1d1c1c;
+            text-transform: capitalize;
+            font-size: 14px;
+            left: 200px;
+            top: -30px;
+        }
+
+        .stay {
+            position: relative;
+            left: 200px;
+            top: -37px;
+            line-height: 40px;
+            width: 300px;
+            border-radius: 6px;
+            padding: 0 22px;
+            font-size: 16px;
+            color: #555
+        }
+
+        .staydurationlabel {
+            position: relative;
+            color: #1d1c1c;
+            text-transform: capitalize;
+            font-size: 14px;
+            left: 200px;
+            top: -30px;
+        }
+        button{
+        background-color: rgb(143, 8, 184);
+        display:block;
+        margin:20px 0px 0px 20px;
+        text-align: center;
+        align-content: center;
+        border-radius: 12px;
+        border:2px solid #1d1c1c;
+        padding: 14px 110px;
+        outline: none;
+        color: white;
+        cursor: pointer;
+        transition: 0.25px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="touristvisafrom">
+        <h1>Tourist visa</h1>
+    </div>
+    <div class="main">
+        <form>
+            <div id="name">
+                <h2 class="name">Name</h2>
+                <input class="firstname" type="text" name="first_name"><br>
+                <label class="firstlabel">first name</label>
+                <input class="lastname" type="text" name="last_name"><br>
+                <label class="lastlabel">last name</label>
+            </div>
+            <div>
+                <h2 class="name">Passport no.</h2>
+                <input class="passportno" type="number" name="passport_no"><br>
+                <label class="numberlabel">Enter passport no.</label>
+            </div>
+            <div>
+                <h2 class="name">Expiry date</h2>
+                <input class="expirationdate" type="date" name="expiry_date"><br>
+                <label class="expirylabel">Enter passport expiration date</label>
+            </div>
+           
+            <div>
+                <h2 class="name">Travel Agency Name</h2>
+                <input class="agencyname" type="text" name="travel_agency"><br>
+                <label class="agencynamelabel">Name of the travel agency.</label>
+            </div>
+            <div>
+                <h2 class="name"> Country name </h2>
+                <input class="country_name" type="text" name="contry_names"><br>
+                <label class="countrynamelabel">Enter the name of country you will visit.</label>
+            </div>
+            <div>
+                <h2 class="name">Address</h2>
+                <input class="address" type="text" name="addresses"><br>
+                <label class="addresslabel">Enter your address.</label>
+            </div>
+            <div>
+                <h2 class="name">Duration of stay</h2>
+                <input class="stay" type="text" name="stay_duration"><br>
+                <label class="staydurationlabel">duration you will stay</label>
+            </div>
+            <button type="submit">SUBMIT</button>
+        </form>
+    </div>
+</body>
+
+</html>

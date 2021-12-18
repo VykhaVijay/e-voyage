@@ -1,0 +1,54 @@
+body{
+    text-align: center;
+    margin: 0px 2em;
+    font-family: roboto;
+    background-color:#e7e718;
+}
+
+input{
+    display: none;
+}
+
+.tag{
+    font-size: 20px;
+    margin: 1.5em 0px;
+    padding: 5px 25px;
+    border-radius: 50px;
+    display: inline-block;
+    cursor: pointer;
+    background: #efefef;
+    text-decoration: none;
+    color: black;
+    border: 1px solid #ccc;
+}
+
+img{
+    max-width: 300px;
+    width: 300px;
+    height: 300px;
+    transition: all .4s ease-in-out;
+    border-radius: 10px;
+}
+img:hover{
+    transform: scale(1.07);
+}
+/*filter CSS */
+
+ #america:checked ~ .images > img:not([class*='america']),
+ #europe:checked ~ .images > img:not([class*='europe']),
+ #asia:checked ~ .images > img:not([class*='asia']),
+ #australia:checked ~ .images > img:not([class*='australia']),
+ #africa:checked ~ .images > img:not([class*='africa']){
+   width: 0px;
+   height: 0px;
+}
+
+#all:checked ~ .all,
+#america:checked ~ .tag1, 
+#europe:checked ~ .tag2,
+#asia:checked ~ .tag3,
+#australia:checked ~ .tag4,
+#africa:checked ~ .tag5{
+    background-color: #71b7e6;      
+    color: white;
+} 

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css link -->
+    <link rel="stylesheet" type="text/css" href="loginstyles.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <title>e-voyagelogin</title>
+    <link rel="favicon" href="favicon.ico">
+
+</head>
+<body>
+    <hr class="line">
+    <div class="login-wrapper">
+        <form action="" class="form">
+          <img src="img/avatar.png" alt="">
+          <h2>Login</h2>
+          <div class="input-group">
+            <input type="text" name="loginUser" id="loginUser" required>
+            <label for="loginUser">User Name</label>
+          </div>
+          <div class="input-group">
+            <input type="password" name="loginPassword" id="loginPassword" required>
+            <label for="loginPassword">Password</label>
+          </div>
+          <input type="submit" value="Login" class="submit-btn">
+          <a href="#forgot-pw" class="forgot-pw">Forgot Password?</a>
+        </form>
+    
+        <div id="forgot-pw">
+          <form action="" class="form">
+            <a href="#" class="close">&times;</a>
+            <h2>Reset Password</h2>
+            <div class="input-group">
+              <input type="email" name="email" id="email" required>
+              <label for="email">Email</label>
+            </div>
+            <input type="submit" value="Submit" class="submit-btn">
+          </form>
+        </div>
+      </div>
+</body>
+</html>
